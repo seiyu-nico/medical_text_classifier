@@ -1,0 +1,8 @@
+services:
+  medical_text_classifier:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app
+    command: sleep infinity
